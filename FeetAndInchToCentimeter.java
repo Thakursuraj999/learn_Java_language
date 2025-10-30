@@ -7,7 +7,7 @@ public class FeetAndInchToCentimeter {
             System.out.println("Enter inch: ");
             int inch = sc.nextInt();
             double centimeter = 0;
-            if(inch < 0 || inch > 12 && feet < 0){
+            if(inch < 0 || inch > 12 || feet < 0){
                 System.out.println("Invalid feet or inch parameters");
             }
             else if(inch > 0 && feet == 0){
@@ -30,3 +30,4 @@ public class FeetAndInchToCentimeter {
         return centimeter;
     }
 }
+
