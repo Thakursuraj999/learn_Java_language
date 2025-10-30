@@ -13,6 +13,9 @@ public class SecondsToMinutesAndHours {
         }
     }
     public static String getDurationString(int second){
+        if(second < 0){
+            return "Invalid Value";
+        }
         int minute = second/60;
         int hour = minute/60;
         int remainingSecond = second%60;
